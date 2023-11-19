@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinify Web</title>
+  <link href="css/brands.min.css" rel="stylesheet">
+  <link href="css/solid.min.css" rel="stylesheet">
+  <link href="css/fontawesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex" id="animation-container">
+    <h1 class="header">Tinify Converter</h1>
+    <div class="flexible">
+      <div class="toolbar">
+        <div class="tool-group">
+          <div class="button" id="bold-button">
+            <i class="fa fa-bold icon"></i>
+          </div>
+          <div class="button" id="italic-button">
+            <i class="fa fa-italic icon"></i>
+          </div>
+        </div>
+        <div class="toolbar-title">Input</div>
+        <div class="tool-group">
+          <a class="button align-right" href="libraries.html">
+            <i class="fa fa-file-code icon"></i>
+          </a>
+          <a class="button" href="" target="_blank">
+            <i class="fa-brands fa-github icon"></i>
+          </a>
+        </div>
+      </div>
+      <textarea class="text-field box input" type="text" id="input" placeholder="Enter Text Here"></textarea>
+    </div>
+    <i class="fa fa-angles-down fa-2x arrow-down"></i>
+    <div class="flexible">
+      <div class="toolbar">
+        <div class="tool-group">
+          <div class="button" id="copy-button">
+            <i class="fa fa-copy icon"></i>
+          </div>
+        </div>
+        <div class="toolbar-title">output</div>
+      </div>
+      <div class="textarea-wrapper">
+        <textarea class="text-field box output" type="text" id="output" placeholder="Output Here" readonly></textarea>
+        <div class="copy-indicator">
+          <div class="copy-icons">
+            <div id="icon-copied">
+              Copied
+              <i class="fa fa-copy" id="icon-copied"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img class="footer-logo" src="assets/OVERLORDMC-Logo-500-300.png" alt="OVERLORDMC Logo">
+  </div>
+  <div class="background-decor"></div>
+</body>
+
+<script src="js/replacer.js"></script>
+
+</html>
